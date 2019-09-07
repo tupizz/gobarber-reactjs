@@ -1,4 +1,5 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 
 // Reactotron configuration
@@ -10,12 +11,17 @@ import history from './services/history';
 // Global style
 import GlobalStyle from './styles/global';
 
+// import store
+import store from './store';
+
 function App() {
   return (
-    <Router history={history}>
-      <Routes />
-      <GlobalStyle />
-    </Router>
+    <Provider store={store}>
+      <Router history={history}>
+        <Routes />
+        <GlobalStyle />
+      </Router>
+    </Provider>
   );
 }
 
