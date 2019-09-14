@@ -2,6 +2,12 @@
   "name": "gobarber-reactjs",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@rocketseat/unform": "^1.5.1",
     "axios": "^0.19.0",
@@ -26,12 +32,6 @@
     "redux-saga": "^1.0.5",
     "styled-components": "^4.3.2",
     "yup": "^0.27.0"
-  },
-  "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
