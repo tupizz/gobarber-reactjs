@@ -16,6 +16,11 @@ export default function user(state = USER_INITIAL_STATE, action) {
         draft.profile = action.payload.profile;
       });
 
+    case '@auth/SIGN_OUT':
+      return produce(state, draft => {
+        draft.profile = null;
+      });
+
     default:
       return state;
   }
